@@ -107,7 +107,9 @@ public class Main {
                 continuarPrograma = false;
                 break; // Sai do loop interno e externo
             }
-        }
+            else {
+                System.out.println("Opção inválida, digite uma valida...");
+            }
         teclado.close();
     }
 
