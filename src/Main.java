@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -110,10 +109,11 @@ public class Main {
             else {
                 System.out.println("Opção inválida, digite uma valida...");
             }
+        }
         teclado.close();
     }
 
-    private static void gerarNovoVetor(int[] vetor) {
+    public static void gerarNovoVetor(int[] vetor) {
         Random random = new Random();
         for (int i = 0; i < vetor.length; i++) {
             vetor[i] = random.nextInt(1000);
